@@ -115,7 +115,7 @@ Response Body Sample:
 
 ### Getting Specific Invoice Details ###
 
-**Endpoint:** GET '/specific_invoice_item/<int:invoice_id>'
+**Endpoint:** GET '/<int:invoice_id>/specific_invoice_item'
 
 Returns details of a specific invoice in JSON format.
 
@@ -124,25 +124,25 @@ Returns details of a specific invoice in JSON format.
 1. Open Postman.
 2. Create a new request.
 3. Set the request type to GET and enter the URL for the specific_invoice_item route, replacing {{ invoice_id }} with the actual invoice ID.
-   - Example: http://127.0.0.1:5000/specific_invoice_item/8
+   - Example: http://127.0.0.1:5000/api/invoice/1/specific_invoice_item
 4. Click the "Send" button to send the GET request to the specified URL.
 
 #### Example ####
 
-GET /specific_invoice_item/8
+GET /1/specific_invoice_item
 
 Response Body Sample:
 [
 {
 "amount": "55",
 "description": "Demo",
-"id": 3,
+"id": 1,
 "units": 5
 },
 {
 "amount": "66",
 "description": "Tham_Prod",
-"id": 9,
+"id": 1,
 "units": 7
 }
 ]
