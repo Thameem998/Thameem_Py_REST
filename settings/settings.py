@@ -1,0 +1,3 @@
+SECRET_KEY = '55555'
+SQLALCHEMY_DATABASE_URI = 'mysql://root:55555@db/DB_Thameem'
+DEBUG = True
