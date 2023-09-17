@@ -6,13 +6,13 @@
 <body>
     <h1>Add Invoice Item</h1>
     <form method="POST" action="/api/invoice/{{ invoice_id }}/add_invoice_of_created_item">
-        <label for="units">Units:</label>
+       <label for="units">Units:</label>
         <input type="number" id="units" name="units" required><br>
-        <label for="description">Add the description:</label>
+        <label for="description">Description:</label>
         <input type="text" id="description" name="description" required><br>
-        <label for="amount">Please mention amount:</label>
+        <label for="amount">Amount:</label>
         <input type="number" id="amount" name="amount" required><br>
-        <input type="submit" value="Add Invoice Item Now, Please!">
+        <input type="submit" value="Add Invoice Item">
     </form>
 </body>
 </html>
