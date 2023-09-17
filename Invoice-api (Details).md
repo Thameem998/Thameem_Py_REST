@@ -83,27 +83,27 @@ Response Body Sample-
 
 ### GET a specific invoice details ###
 
-GET '/specific_invoice_item/<int:invoice_id>'
+GET '/<int:invoice_id>/specific_invoice_item'
 
 GET the details of a specific invoice in a JSON return format
 
 #### Example ####
 
 ```
-GET /specific_invoice_item/8
+GET /1/specific_invoice_item
 
 Response Body Sample:
 [
 {
 "amount": "55",
 "description": "Demo",
-"id": 3,
+"id": 1,
 "units": 5
 },
 {
 "amount": "66",
 "description": "Tham_Prod",
-"id": 9,
+"id": 1,
 "units": 7
 }
 ]
